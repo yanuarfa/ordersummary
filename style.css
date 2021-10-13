@@ -1,0 +1,531 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  text-decoration: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 5px;
+  right: 0;
+  left: 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.background {
+  height: 100vh;
+  width: 100vw;
+  background: url(images/pattern-background-desktop.svg) no-repeat;
+  background-size: 100px cover;
+  background-color: rgb(224, 232, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 80%;
+  width: 40%;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cover {
+  height: 30%;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-image: url(images/illustration-hero.svg);
+  background-size: cover;
+}
+
+.content {
+  height: 70%;
+  width: 100%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper-content {
+  height: 90%;
+  width: 90%;
+  justify-content: center;
+}
+
+.title {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  text-align: center;
+  color: hsl(223, 47%, 23%);
+}
+
+.wrapper-description {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.description {
+  height: 100%;
+  width: 70%;
+  text-align: center;
+}
+
+.text-description {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+}
+
+.wrapper-plan {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.plan-area {
+  height: 100%;
+  width: 90%;
+  border-radius: 10px;
+  background-color: hsla(224, 23%, 55%, 0.123);
+  display: flex;
+}
+
+.music-image {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-music {
+  height: 60px;
+  width: 60px;
+}
+
+.name-price {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.type {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.price {
+  font-family: "Red Hat Display", sans-serif;
+  color: hsl(224, 23%, 55%);
+  margin-top: 5px;
+}
+
+.choose-plan {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-change a {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  text-decoration: underline;
+  color: hsl(245, 75%, 52%);
+}
+
+.wrapper-button {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-proceed {
+  padding: 20px;
+  padding-left: 25%;
+  padding-right: 25%;
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.164);
+  cursor: pointer;
+  transition: 1s;
+}
+
+.btn-proceed a {
+  font-family: "Red Hat Display", sans-serif;
+  color: hsl(225, 100%, 98%);
+  font-weight: 700;
+}
+
+.btn-proceed:hover {
+  padding: 20px;
+  padding-left: 25%;
+  padding-right: 25%;
+  background-color: rgb(3, 3, 3);
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.164);
+}
+
+.btn-cancel {
+  padding: 20px;
+  padding-left: 25%;
+  padding-right: 25%;
+  transition: 1s;
+}
+
+.btn-cancel a {
+  color: hsl(224, 23%, 55%);
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 411px) {
+  .background {
+    height: 100vh;
+    width: 100vw;
+    background: url(images/pattern-background-mobile.svg) no-repeat;
+    background-size: cover;
+    background-color: rgb(224, 232, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    height: 70%;
+    width: 85%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .wrapper-description {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .description {
+    height: 100%;
+    width: 80%;
+    text-align: center;
+  }
+
+  .wrapper-plan {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .plan-area {
+    height: 100%;
+    width: 90%;
+    border-radius: 10px;
+    background-color: hsla(224, 23%, 55%, 0.123);
+    display: flex;
+  }
+
+  .img-music {
+    height: 45px;
+    width: 45px;
+  }
+
+  .btn-change a {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: underline;
+    color: hsl(245, 75%, 52%);
+  }
+
+  .wrapper-button {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  .btn-proceed {
+    padding: 15px;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .btn-proceed a {
+    font-family: "Red Hat Display", sans-serif;
+    color: hsl(225, 100%, 98%);
+    font-weight: 700;
+  }
+
+  .btn-proceed:hover {
+    padding: 15px;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: rgb(3, 3, 3);
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.164);
+  }
+
+  .btn-cancel {
+    padding: 15px;
+    padding-left: 20%;
+    padding-right: 20%;
+    transition: 1s;
+  }
+
+  .btn-cancel a {
+    color: hsl(224, 23%, 55%);
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 700;
+  }
+}
+
+@media only screen and (max-width: 865px) {
+  .background {
+    height: 100vh;
+    width: 100vw;
+    background: url(images/pattern-background-desktop.svg) no-repeat;
+    background-size: 100px cover;
+    background-color: rgb(224, 232, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    height: 80%;
+    width: 60%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .wrapper-description {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .description {
+    height: 100%;
+    width: 80%;
+    text-align: center;
+  }
+
+  .wrapper-plan {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .plan-area {
+    height: 100%;
+    width: 90%;
+    border-radius: 10px;
+    background-color: hsla(224, 23%, 55%, 0.123);
+    display: flex;
+  }
+
+  .img-music {
+    height: 45px;
+    width: 45px;
+  }
+
+  .btn-change a {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: underline;
+    color: hsl(245, 75%, 52%);
+  }
+
+  .wrapper-button {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  .btn-proceed {
+    padding: 15px;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .btn-proceed a {
+    font-family: "Red Hat Display", sans-serif;
+    color: hsl(225, 100%, 98%);
+    font-weight: 700;
+  }
+
+  .btn-proceed:hover {
+    padding: 15px;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: rgb(3, 3, 3);
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.164);
+  }
+
+  .btn-cancel {
+    padding: 15px;
+    padding-left: 20%;
+    padding-right: 20%;
+    transition: 1s;
+  }
+
+  .btn-cancel a {
+    color: hsl(224, 23%, 55%);
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 700;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .background {
+    height: 100vh;
+    width: 100vw;
+    background: url(images/pattern-background-mobile.svg) no-repeat;
+    background-size: 100px cover;
+  }
+
+  .card {
+    height: 90%;
+    width: 90%;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .wrapper-description {
+    height: 25%;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .description {
+    height: 100%;
+    width: 90%;
+  }
+
+  .text-description {
+    font-size: 13px;
+  }
+
+  .wrapper-plan {
+    height: 25%;
+    width: 100%;
+  }
+
+  .plan-area {
+    height: 90%;
+    width: 90%;
+  }
+
+  .img-music {
+    height: 35px;
+    width: 35px;
+  }
+
+  .name-price {
+    font-size: 12px;
+  }
+
+  .type {
+    font-size: 12px;
+  }
+
+  .btn-change a {
+    font-size: 12px;
+  }
+
+  .wrapper-button {
+    height: 30%;
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .btn-proceed {
+    padding: 8px;
+    padding-left: 20%;
+    padding-right: 20%;
+    border-radius: 8px;
+    transition: 1s;
+  }
+
+  .btn-proceed a {
+    font-family: "Red Hat Display", sans-serif;
+    color: hsl(225, 100%, 98%);
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+  .btn-proceed:hover {
+    padding: 8px;
+    padding-left: 20%;
+    padding-right: 20%;
+    border-radius: 8px;
+  }
+
+  .btn-cancel {
+    padding: 8px;
+    padding-left: 20%;
+    padding-right: 20%;
+    transition: 1s;
+  }
+
+  .btn-cancel a {
+    color: hsl(224, 23%, 55%);
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+  }
+}
